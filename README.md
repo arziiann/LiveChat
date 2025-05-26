@@ -123,15 +123,4 @@ npm start
 * Messages are encrypted using AES-128-CBC for privacy.
 * JWT tokens are used to secure user sessions.
 
----
-
-## Contributing
-
-Feel free to open issues or submit pull requests for bug fixes or feature requests.
-
----
-
-
----
-
 
