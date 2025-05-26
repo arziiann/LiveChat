@@ -1,4 +1,3 @@
-```markdown
 # LiveChat
 
 LiveChat is a modern, secure, and user-friendly web chat application that allows real-time communication between friends and acquaintances.
@@ -40,11 +39,23 @@ backend/
 ├── middlwear/          # Middleware (e.g., authentication)
 ├── router/             # Express routes
 ├── utils/              # Utility functions (e.g., encryption)
-frontend/
-├── chat.html
-├── login.html
-├── register.html
-├── verify.html
+├── frontend/
+│   ├── profil/
+│   │   ├── profil.html
+│   │   ├── script.js
+│   │   └── style.css
+│   ├── chat/
+│   │   ├── chat.html
+│   │   ├── script.js
+│   │   └── style.css
+│   ├── register/
+│   │   ├── register.html
+│   │   ├── script.js
+│   │   └── style.css
+│   ├── verify/
+│   │   ├── verify.html
+│   │   ├── script.js
+│   │   └── style.css
 uploads/                # Folder for storing user-uploaded profile pictures
 .env                   # Environment variables (not committed to GitHub)
 .gitignore             # Files/folders excluded from Git tracking
@@ -60,7 +71,7 @@ README.md
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/livechat.git
+git clone https://github.com/arziiann/livechat.git
 cd livechat/backend
 ````
 
@@ -88,6 +99,8 @@ DB_NAME=your_db_name
 5. Start the server:
 
 ```bash
+
+cd backend/
 npm start
 ```
 
@@ -119,9 +132,7 @@ Feel free to open issues or submit pull requests for bug fixes or feature reques
 
 ---
 
-## Author
-
-https://github.com/arziiann
 
 ---
+
 
