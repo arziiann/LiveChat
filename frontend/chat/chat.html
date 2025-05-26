@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiveChat</title>
+    <link rel="stylesheet" href="../chat/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">LiveChat</div>
+      <div class="user-list" id="userList"></div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div id="userMenu" class="user-menu">
+        <div class="menu-header">
+          <img src="xamo.jpg" alt="Profile" id="profilePic" style="cursor: pointer" />
+          <div class="menu-name">Name</div>
+        </div>
+        <input type="file" id="profilePicInput" accept="image/*" style="display: none" />
+        <div class="menu-body"></div>
+      </div>
+    </div>
+
+    <div class="chat-area">
+      <div class="chat-header" id="chatHeader">Select a user</div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Write a message..." />
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../chat/script.js"></script>
+  </body>
+</html>
